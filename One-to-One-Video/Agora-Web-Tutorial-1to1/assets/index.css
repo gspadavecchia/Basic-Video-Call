@@ -1,10 +1,14 @@
+body {
+  background-color: #eaf1fa;
+}
+
 .banner {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 0;
-  background-color: #52575c;
+  background-color: #19242f;
   color: white;
 }
 
@@ -59,7 +63,7 @@ input {
 }
 
 .header-logo {
-  background-color: #52575c;
+  background-color: #19242f;
 }
 
 .header-logo img {
