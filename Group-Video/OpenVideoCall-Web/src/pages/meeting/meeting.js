@@ -67,7 +67,7 @@ const optionsInit = () => {
 const uiInit = options => {
   document.querySelector(
     ".ag-header-lead span"
-  ).innerHTML = `AgoraWeb v${agoraVersion.slice(1)}`;
+  ).innerHTML = `ACCESS Demo - AgoraWeb v${agoraVersion.slice(1)}`;
   Renderer.init("ag-canvas", 9 / 16, 8 / 5);
   // Mobile page should remove title and footer
   if (isMobileSize()) {
@@ -185,7 +185,6 @@ const shareEnd = () => {
     shareStream = null;
   }
 };
-
 
 // Start screen sharing
 const shareStart = () => {

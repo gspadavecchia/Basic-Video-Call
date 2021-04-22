@@ -25,7 +25,7 @@ let _testChannel = String(
 const uiInit = () => {
   document.querySelector(
     ".ag-header-lead span"
-  ).innerHTML = `AgoraWeb v${agoraVersion.slice(1)}`;
+  ).innerHTML = `ACCESS Demo - AgoraWeb v${agoraVersion.slice(1)}`;
   return new Promise((resolve, reject) => {
     // Init info card
     let profile = RESOLUTION_ARR[Cookies.get("videoProfile")];
@@ -46,9 +46,7 @@ const uiInit = () => {
 
     // Info object representing the user's video profile.
     let info = {
-      videoProfile: `${profile[0]}x${profile[1]} ${profile[2]}fps ${
-        profile[3]
-      }kbps`,
+      videoProfile: `${profile[0]}x${profile[1]} ${profile[2]}fps ${profile[3]}kbps`,
       channel: Cookies.get("channel") || "test",
       transcode,
       attendeeMode: Cookies.get("attendeeMode") || "video", // video, audio or audience
@@ -313,7 +311,6 @@ const receiverInit = () => {
     receiver.on("stream-removed", function(_) {
       $("#videoItem").empty();
     });
-
 
     receiver.init(key, () => {
       receiver.join(
